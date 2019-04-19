@@ -1,9 +1,9 @@
 # Pin on Disc Data Analysis
 A Python script that will automate the cleaning of data from a TE67 Pin-on-Disc Tribometer and the generation of Coefficient of Friction and Material Wear plots. 
 
-..* Place the script (pod.py) in the same directory as the folder containing the TSV files generated from the Pin-on-Disc.
+  * Place the script (pod.py) in the same directory as the folder containing the TSV files generated from the Pin-on-Disc.
 
-..* Sample data generated from the TE67 Pin-on-disc is included. These are the results from testing Injection Molded Polyphenylene Sulfide (PPS) and Polytetrafluorethylene (PTFE) polymer blends with varying PTFE content and under various testing conditions. 
+  * Sample data generated from the TE67 Pin-on-disc is included. These are the results from testing Injection Molded Polyphenylene Sulfide (PPS) and Polytetrafluorethylene (PTFE) polymer blends with varying PTFE content and under various testing conditions. 
 
 ## Situation/Problem:
 
@@ -24,10 +24,10 @@ This process becomes problematic when the test time goes beyond 30 minutes (1800
 The aim of this mini-project is to generate a Python script that will:
 
 
-..* Automatically generate plots of the CoF over time for all trials (DONE!)
-..*  Automatically generate plots of the Material Displacement over time for all trials (DONE!)
-..* Determine the CoF at the steady-state region of the plots generated for each trial (ongoing)
-..* Determine the Specific Wear Rate at the steady-state region of the plots generated for each trial (ongoing)
+  * Automatically generate plots of the CoF over time for all trials (DONE!)
+  *  Automatically generate plots of the Material Displacement over time for all trials (DONE!)
+  * Determine the CoF at the steady-state region of the plots generated for each trial (ongoing)
+  * Determine the Specific Wear Rate at the steady-state region of the plots generated for each trial (ongoing)
 
 ## Status
 
