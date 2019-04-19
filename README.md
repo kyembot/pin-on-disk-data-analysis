@@ -1,4 +1,4 @@
-# Pin on Disc Data Analysis
+# Pin on Disc Data Analysis (work in progress)
 A Python script that will automate the cleaning of data from a TE67 Pin-on-Disc Tribometer and the generation of Coefficient of Friction and Material Wear plots. 
 
   * Place the script (pod.py) in the same directory as the folder containing the TSV files generated from the Pin-on-Disc.
@@ -19,7 +19,7 @@ The usual process to analyze the wear and coefficient of friction from the TE67 
 
 This process becomes problematic when the test time goes beyond 30 minutes (1800s) as the PoD measures information per second. For composite materials, test time can go up to 24 hours which means the TSV files will contain around 100,000 lines. Also, this process has to be repeated for each trial. 
 
-## Objectives
+## Objectives and Status
 
 The aim of this mini-project is to generate a Python script that will:
 
@@ -29,13 +29,11 @@ The aim of this mini-project is to generate a Python script that will:
   * Determine the CoF at the steady-state region of the plots generated for each trial (ongoing)
   * Determine the Specific Wear Rate at the steady-state region of the plots generated for each trial (ongoing)
 
-## Status
-
 Problems encountered so far:
 
 1. ~~Files are in tsv format and can't be loaded to Pandas directly.~~ Solved!
-	- [converted to CSV using this method](https://stackoverflow.com/questions/48567866/python-large-tsv-file-to-csv-file)
-	- loaded to pandas but then encountered a tokenizing data error. to solve this, I used this [method](https://stackoverflow.com/questions/18039057/python-pandas-error-tokenizing-data)
+	- [converted to CSV using this method](https://stackoverflow.com/questions/48567866/python-large-tsv-file-to-csv-file).
+	- loaded the generated CSV files to Pandas but then encountered a tokenizing data error. To solve this, I used this [method](https://stackoverflow.com/questions/18039057/python-pandas-error-tokenizing-data).
 
 
 
