@@ -25,15 +25,9 @@ The aim of this mini-project is to generate a Python script that will:
 
 
   * Automatically generate plots of the CoF over time for all trials (DONE!)
-  *  Automatically generate plots of the Material Displacement over time for all trials (DONE!)
+  * Automatically generate plots of the Material Displacement over time for all trials (DONE!)
   * Determine the CoF at the steady-state region of the plots generated for each trial (ongoing)
   * Determine the Specific Wear Rate at the steady-state region of the plots generated for each trial (ongoing)
-
-Problems encountered so far:
-
-1. ~~Files are in tsv format and can't be loaded to Pandas directly.~~ Solved!
-	- [converted to CSV using this method](https://stackoverflow.com/questions/48567866/python-large-tsv-file-to-csv-file).
-	- loaded the generated CSV files to Pandas but then encountered a tokenizing data error. To solve this, I used this [method](https://stackoverflow.com/questions/18039057/python-pandas-error-tokenizing-data).
 
 
 
