@@ -1,7 +1,7 @@
 # Pin on Disc Data Analysis
 A Python script that will automate the cleaning of data from a TE67 Pin-on-Disc Tribometer and the generation of Coefficient of Friction and Material Wear plots. 
 
-..* Place the script in the same directory as the folder containing the TSV files generated from the Pin-on-Disc.
+..* Place the script (pod.py) in the same directory as the folder containing the TSV files generated from the Pin-on-Disc.
 
 ..* Sample data generated from the TE67 Pin-on-disc is included. These are the results from testing Injection Molded Polyphenylene Sulfide (PPS) and Polytetrafluorethylene (PTFE) polymer blends with varying PTFE content and under various testing conditions. 
 
