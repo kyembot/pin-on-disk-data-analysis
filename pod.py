@@ -2,20 +2,6 @@ import glob
 import numpy
 import matplotlib.pyplot
 import pandas as pd
-import csv
-
-def tsvconvertcsv(path_name):
-    """Converts a TSV file into a CSV file. 
-    Creates a new CSV file of the same name in the same directory"""
-    tsv = open(path, 'r')
-    csv_path = path.replace('.tsv', '.csv')
-    fileContent = tsv.read()
-    
-    csv_file = open(csv_path, "w")
-    csv_file.write(fileContent)
-    csv_file.close()
-    
-    return csv_path
 
 def loadFile(file_name):
     """Loads CSV file into a dataframe and removes columns that are
@@ -50,7 +36,6 @@ def plotFigures(file_name):
 filenames = sorted(glob.glob('pod_data/PPS*.tsv')) # location of the POD files
 
 for path in filenames:
-    converted_file = tsvconvertcsv(path)
-    file = loadFile(converted_file)
+    file = loadFile(path)
     print(path)
     plotFigures(file)
